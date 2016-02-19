@@ -1,17 +1,10 @@
 # Reddit Sentiment Analysis
 
-[![Dependency Status][dep-status-img]][dep-status-link] [![devDependency Status][dev-dep-status-img]][dev-dep-status-link] [![Build Status][ci-img]][ci]
-
 A little webapp aimed at sniffing out the general sentiment about companies on reddit.
+It's still a bit of a blunt instrument though, and searching something like Apple may bring back results not pertinent to the actual company.
 
 Made with :heart: by [Cameron Olivier](https://twitter.com/cameronolivier)!
 
-[dep-status-img]: https://david-dm.org/mxstbr/react-boilerplate.svg
-[dep-status-link]: https://david-dm.org/mxstbr/react-boilerplate
-[dev-dep-status-img]: https://david-dm.org/mxstbr/react-boilerplate/dev-status.svg
-[dev-dep-status-link]: https://david-dm.org/mxstbr/react-boilerplate#info=devDependencies
-[ci-img]: https://travis-ci.org/mxstbr/react-boilerplate.svg?branch=master
-[ci]: https://travis-ci.org/mxstbr/react-boilerplate
 
 -----
 

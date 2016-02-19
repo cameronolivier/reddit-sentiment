@@ -2,21 +2,78 @@
     margin-top: 50px;
 }
 
+form {
+    width: 75%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
 input[type=text]{
-    width: 300px;
-    padding: 5px 10px;
+    width: 70%;
+    padding: 8px 10px;
+    border:1px solid #2980b9;
 }
 
 button[type=submit] {
-    background: red;
-    border:1px solid darkred;
-    padding: 6px 10px;
-    color:darkred;
-    margin-left: 5px;
-    border-radius: 1px;
+    background: #3498db;
+    border:1px solid #2980b9;
+    padding: 8px 10px;
+    color:#2c3e50;
+    width: 30%;
+    font-weight: 300;
 }
 
 .loading {
     text-align:center;
     margin-top:40px;
+}
+
+.search-results {
+    /*--GPU Accelration--*/
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+
+    -moz-transition: all 0.3s ease-out;
+    /* FF4+ */
+    -o-transition: all 0.3s ease-out;
+    /* Opera 10.5+ */
+    -webkit-transition: all 0.3s ease-out;
+    /* Saf3.2+, Chrome */
+    -ms-transition: all 0.3s ease-out;
+    /* IE10 */
+    transition: all 0.3s ease-out;
+}
+
+
+.overall-sentiment {
+    font-size: 24px;
+    background: #efefef;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 400;
+    color: #2d2d2d;
+    text-transform: capitalize;
+    border-bottom: 5px solid;
+    margin-bottom: 50px;
+}
+
+
+
+.search-results h3 {
+    margin: 0;
+}
+
+.search-results .result {
+    border-bottom: 1px solid #cccccc;
+    padding: 20px 0;
+}
+
+.result p {
+    margin: 0 0 1em;
+}
+
+.result .comment {
+    font-size: 14px;
+    color:#666;
 }
