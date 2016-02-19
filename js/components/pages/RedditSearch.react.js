@@ -10,6 +10,7 @@ import { Link } from 'react-router';
 var $ =require('jquery');
 var _ = require("lodash");
 var sentiment = require("sentiment");
+var FontAwesome = require('react-fontawesome');
 
 
 var SearchResults = React.createClass({
@@ -41,13 +42,13 @@ var SearchResults = React.createClass({
         var average = avg/numResults;
 
         var color = "";
-        if (average > 10)   {color = "darkgreen";}
-        else if (average > 5)    {color = "green";}
-        else if (average > 0)    {color = "lightgreen";}
-        else if (average === 0)  {color = "skyblue";}
-        else if (average < -10 )   {color = "red";}
-        else if (average < -5)    {color = "orange";}
-        else if (average < 0)   {color = "yellow";}
+        if (average > 10)   {color = "#27ae60";}
+        else if (average > 5)    {color = "#2ecc71";}
+        else if (average > 0)    {color = "#1abc9c";}
+        else if (average === 0)  {color = "#3498db";}
+        else if (average < -10 )   {color = "#c0392b";}
+        else if (average < -5)    {color = "#d35400";}
+        else if (average < 0)   {color = "#f1c40f";}
 
         return(<div className="search-results">
             <div className="overall-sentiment" style={{borderColor : color}}>Overall sentiment for {this.props.company}: <strong>{average}</strong></div>
@@ -98,7 +99,7 @@ var RedditSearch = React.createClass({
     },
     render : function () {
         return (<div className="app-wrap">
-            <h1>Reddit Sentiment Analyser</h1>
+            <h1><FontAwesome name="flask" size="2x"  className="logo" /> Reddit Sentiment Analyser</h1>
             <p>This is a simple little tool that searches the latest Reddit comments for a given company. It returns all comments referencing the company as well as an indication of how positive or negative each comment is and an overall sentiment on that company.</p>
             <div className="search-form">
                 <form onSubmit={this.handleSubmit}>
