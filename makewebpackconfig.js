@@ -49,7 +49,7 @@ module.exports = function(options) {
   } else {
     // Entry
     entry = [
-      "webpack-dev-server/client?http://localhost:3000", // Needed for hot reloading
+      "webpack-dev-server/client?http://localhost:4500", // Needed for hot reloading
       "webpack/hot/only-dev-server", // See above
       path.resolve(__dirname, 'js/app.js') // Start with js/app.js...
     ];
@@ -79,7 +79,12 @@ module.exports = function(options) {
           test: /\.js$/, // Transform all .js files required somewhere within an entry point...
           loader: 'babel', // ...with the specified loaders...
           exclude: path.join(__dirname, '/node_modules/') // ...except for the node_modules folder.
-        }, {
+        },
+        {
+          test: /\.json$/,
+          loader: 'json'
+        },
+        {
           test:   /\.css$/, // Transform all .css files required somewhere within an entry point...
           loader: cssLoaders // ...with PostCSS
         }, {

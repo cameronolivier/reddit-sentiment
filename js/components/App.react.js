@@ -14,7 +14,6 @@ class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <img className="logo" src={Logo} />
         { this.props.children }
       </div>
     );

@@ -1,16 +1,20 @@
 {
-  "name": "reactjs-boilerplate",
-  "version": "2.4.0",
-  "description": "Quick setup for new React.js applications featuring Redux, hot–reloading, PostCSS, react-router and Mocha.",
+  "name": "reddit-sentiment",
+  "version": "0.0.1",
+  "description": "Little webapp that searches Reddit comments for a company and returns all comments with a sentiment rating.",
   "dependencies": {
     "fontfaceobserver": "^1.5.1",
     "history": "1.17.0",
+    "jquery": "^2.2.0",
+    "json": "^9.0.3",
+    "lodash": "^4.5.0",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
     "react-redux": "^4.0.0",
     "react-router": "^1.0.3",
     "redux": "^3.0.0",
-    "redux-thunk": "^1.0.0"
+    "redux-thunk": "^1.0.0",
+    "sentiment": "^1.0.6"
   },
   "devDependencies": {
     "appcache-webpack-plugin": "^1.2.0",
@@ -38,7 +42,7 @@
     "file-loader": "^0.8.4",
     "html-webpack-plugin": "^1.6.1",
     "ip": "1.1.0",
-    "json-loader": "^0.5.2",
+    "json-loader": "^0.5.4",
     "mocha": "^2.3.2",
     "object.assign": "^4.0.1",
     "postcss-focus": "^1.0.0",
@@ -64,6 +68,6 @@
     "build": "npm run test && cross-env NODE_ENV=production webpack --config webpack.prod.config.js --progress --colors -p",
     "serve": "cross-env NODE_ENV=production node server.prod.js"
   },
-  "author": "Max Stoiber",
+  "author": "Cameron Olivier",
   "license": "MIT"
 }

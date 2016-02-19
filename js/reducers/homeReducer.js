@@ -13,12 +13,13 @@
  * add it in the rootReducer.js.
  */
 
-import { CHANGE_OWNER_NAME, CHANGE_PROJECT_NAME } from '../constants/AppConstants';
+import { CHANGE_OWNER_NAME, CHANGE_PROJECT_NAME, SEARCH_REDDIT_TERM } from '../constants/AppConstants';
 import assignToEmpty from '../utils/assign';
 
 const initialState = {
-  projectName: 'React.js Boilerplate',
-  ownerName: 'mxstbr'
+  projectName: 'Reddit Sentiment Analyser',
+  ownerName: 'Cameron Olivier',
+  searchTerm: "Apple"
 };
 
 function homeReducer(state = initialState, action) {
@@ -31,6 +32,10 @@ function homeReducer(state = initialState, action) {
     case CHANGE_PROJECT_NAME:
       return assignToEmpty(state, {
         projectName: action.name
+      });
+    case SEARCH_REDDIT_TERM:
+      return assignToEmpty(state, {
+          searchTerm: action.name
       });
     default:
       return state;

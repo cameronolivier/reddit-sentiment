@@ -1,0 +1,22 @@
+.app-wrap {
+    margin-top: 50px;
+}
+
+input[type=text]{
+    width: 300px;
+    padding: 5px 10px;
+}
+
+button[type=submit] {
+    background: red;
+    border:1px solid darkred;
+    padding: 6px 10px;
+    color:darkred;
+    margin-left: 5px;
+    border-radius: 1px;
+}
+
+.loading {
+    text-align:center;
+    margin-top:40px;
+}
