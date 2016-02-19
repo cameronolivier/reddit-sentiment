@@ -5,12 +5,12 @@
 
 import React, { Component } from 'react';
 import { Link } from 'react-router';
+import FontAwesome from 'react-fontawesome';
 
 //Assistant Libraries
 var $ =require('jquery');
 var _ = require("lodash");
 var sentiment = require("sentiment");
-var FontAwesome = require('react-fontawesome');
 
 
 var SearchResults = React.createClass({
