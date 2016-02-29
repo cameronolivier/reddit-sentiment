@@ -5,7 +5,8 @@ It's still a bit of a blunt instrument though, and searching something like Appl
 
 Made with :heart: by [Cameron Olivier](https://twitter.com/cameronolivier)!
 
-
+##TODO: 
+ - Remove out all the boilerplate stuff and refactor with just the necessary dependencies.
 -----
 
 ## Getting started
